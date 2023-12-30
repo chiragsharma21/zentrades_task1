@@ -1,9 +1,7 @@
 from flask import Flask, render_template
-from flask_frozen import Freezer
 import requests
 
 app = Flask(__name__)
-freezer = Freezer(app)
 
 @app.route('/')
 def index():
@@ -19,5 +17,4 @@ def index():
         return f"Failed to fetch data. Status code: {response.status_code}"
 
 if __name__ == '__main__':
-    freezer.freeze()
     app.run(debug=True)
