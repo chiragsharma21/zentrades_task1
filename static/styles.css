@@ -1,0 +1,71 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 20px;
+    background-color: #f8f8f8;
+}
+
+h1 {
+    color: #2ecc71;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.product {
+    background-color: #ffffff;
+    border: 1px solid #e1e1e1;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 15px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+h2 {
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #777777;
+    margin-bottom: 15px;
+}
+
+.price {
+    color: #e74c3c;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.popularity {
+    color: #3498db;
+    font-style: italic;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button {
+    background-color: #3498db;
+    color: #ffffff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.button:hover {
+    background-color: #2980b9;
+}
+
